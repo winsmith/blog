@@ -1,0 +1,45 @@
+Title: Yay Python!
+
+----
+
+Date: 2015-07-20
+
+----
+
+Text: 
+
+[(image: cover.jpg)](http://yaypython.com)
+
+I first met [Ola Sitarska](http://ola.sitarska.com) and [Ola Sendecka](http://blog.sendecka.me) at [DjangoCon Europe 2013 in Warsaw](http://djangocircus.com). They were simply known as The Two Olas. 
+
+The Olas were the leaders of that year's organisational team and created, without fail or reservation, the best, most inclusive, happiest, most well-organized, relaxed and informative conference I have ever attended. 
+
+After the conference, the two of them launched [DjangoGirls](https://djangogirls.org), an organisation to get more young girls to code with Python and Django. DjangoGirls became an astounding success with workshops all over the world, and has since then been used a template by other successful organisations focusing on increasing diversity in tech. DjangoGirls is a *major* force now, just look at the [list of upcoming events](https://djangogirls.org/events/) on the home page!
+
+Now these two people, whom I respect a huge deal – did I mention they are also Django core developers? – are writing a book. It is called *Yay Python!*
+
+> A year ago, we wrote and published the [Django Girls Tutorial](http://tutorial.djangogirls.org/). It's a thoughtful guide on building your own website for people who never wrote a single line of code in their lives. In just a year, this tutorial has been read by almost 100 000 people.
+
+> We had an incredible opportunity to see how more than 1 600 women learned to code at our workshops, where 500 mentors from all over the world used our tutorial to help them build a working website in just one day.
+
+> **Yay Python!** is a book where we gather all of that experience, and take you on a beautiful journey in the world of creative technology. Beautifully illustrated, with little quirky exercises & dose of ✨.
+
+You should go to http://yaypython.com right now and subscribe to their email newsletter. I know I'll buy the book sight unseen, simply based on The Olas' previous accomplishments.
+
+Also, it has *sparkles*!
+
+<div style="text-align: center;">
+(image: glitter-3.gif)
+</div>
+
+### Update, July 22nd
+
+There is now a [video of the Two Olas announcing their book at this years EuroPython](https://www.youtube.com/watch?v=6yYPq9FuyaI&feature=youtu.be&t=47m16s). The presentation is really well done and cute, and I love the illustration style. If you're one of those people who have been offended by women entering the tech sphere and having a harder time than the average guy, maybe the tale of Liz the Squirrel will help you change your mind.
+
+Since the video quality is not the best, there are also [slides on speakerdeck](https://speakerdeck.com/olasitarska/its-dangerous-to-go-alone-take-this-the-power-of-community) where you can see the gorgeous art style even better. If this is how the book will look, count me in (again).
+
+(image: screen-shot-2015-07-21-at-18.28.49.png)
+
+----
+
+Tags: blog,english,ola,sitarska,asendecka,django,python,yay

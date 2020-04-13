@@ -1,0 +1,53 @@
+---
+layout: post
+title:  "My Last Week With Apple Music"
+date:   2015-10-06 19:14:48 +0200
+categories: english twitter
+---
+
+Somehow I didn't register for Apple Music until about eight days after it went online. That means that for the last week or so, I got to think really hard about keeping it or switching back to Spotify, long after everyone else had already decided. 
+
+I've heard good and bad things, and I've formed my own opinions too. In the beginning it was stuff like [Jim Dalrymple's debacle with his music collection](http://www.loopinsight.com/2015/07/22/apple-music-is-a-nightmare-and-im-done-with-it/), and people complaining about the [horrendous user interface](http://www.theatlantic.com/technology/archive/2015/07/why-is-itunes-so-bad/399833/). 
+
+## Horrendous you say?
+
+I've used to be a long time iTunes user, both on the Mac and in the iPhone, and it was never excellent, but it was fine. However, coming back after a few years in Spotify-land and seeing *this* UI I feel like someone should be ashamed about the state of iTunes. This is not functional high ground territory any more, this is just plain bad in almost every way. Someone should offer these people a glass of ice water. 
+
+There are some views that are really pretty, I admit that, and I enjoy looking at the album and "For You" sections. But the big picture is just convoluted, messy, and inconsistent. Lots of times I can't find what I'm looking for, or even worse, think I've found what I was looking for only to realize that I'm somehow in the wrong context. I really hope people within Apple are busy working on iTunes's replacement. 
+
+This is not helped by the fact that I favor Spotify's model of interaction with music over iTunes'. But even though I tried to use iTunes exactly as intended, it wasn't fun or easy. 
+
+## And is it as bad on mobile?
+
+I'd say using the Music app on iPhone is about as exasperating, even though the app itself isn't as bad as iTunes. 
+
+For me, things are never loading right on the first try, so I always have to switch between tabs multiple time until I even see something. When stuff finally loads, it is really slow on my 5s (a phone that people still buy new). And I find myself way too often lost in the app, nothing that an app made by Apple should really evoke in me. 
+
+It also has annoying bugs. Crashes, ignored taps, content being displayed wrongly. It feels wobbly. When the cell reception gets bad, the app stops responding outright. 
+
+![Confused](/assets/confused.gif)
+
+## What about the music though?
+
+This is where Apple Music really shines. I've never thought this level of music recommendation was possible, but apparently it is. Each time I set out to find something new that I might enjoy, Apple Music's combination of algorithms and curated playlist gave me **dozens** of awesome new songs that were right up my alley, often expanding my horizons in various ways. I'm enjoying the music selection tremendously. 
+
+There is also a really large selection of songs. I didn't find *everything* I wanted, but I found more than on any other music service ever. 
+
+
+![Bliss](/assets/bliss.gif)
+
+<em>I love the curation. It makes me happy.</em>
+
+## So it works for you?
+
+Thanks for asking that, dear headline. This Q&A format really does it for me right now. 
+
+Apple Music isn't for me, and that is sad. Even though the music selection is awesome, and the editors divine (and I even like Beats 1 sometimes). The hassles the combination of bad user interface and a way too complicated interaction model is just too much for me. 
+
+The final straw was when I tried to create a playlist for offline listening the other day. On my phone, I tapped the three dot menu next to the playlist and told it Music to "make available offline." It downloaded stuff, and added the little offline icon to the playlist. 
+
+The evening after, I boarded my train, opened Music and (after navigating through barely responsive menus for an embarrassing amount of time) tapped play. It crashed. I repeated the process. Nothing happened.
+
+![Rage](/assets/giphy.gif)
+
+Although the playlist's music is synced to my phone and uses up space, a connection is somehow necessary to play it back I guess. At this point I didn't even care about finding out the reason behind the failure any more. I am going to reinstall Spotify today, let Apple Music expire and be happy.

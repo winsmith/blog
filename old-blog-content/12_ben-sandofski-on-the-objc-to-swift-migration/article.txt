@@ -1,0 +1,21 @@
+Title: Ben Sandofski on the ObjC to Swift Migration
+
+----
+
+Date: 2015-07-22
+
+----
+
+Text: 
+
+Terrific piece called [Objective-C in a Swift World](https://sandofsky.com/blog/objective-c-in-a-swift-world.html).
+
+> Apple didn’t say, “Objective-C and Swift are good for different problems.” At the 2014 wwdc keynote, it was first described as “modern.” This year Swift is “faster to write and easier to maintain.” Apple says it loves both languages but throws Swift the best bar mitzvah.
+
+I really like the comparison to the Python 3 debacle. And I agree with his closing argument:
+
+> If you’re managing a large company, last year should have been “Wait and See.” 2015 is the year you should ramp up and plan around its future. This is the right time to try it on non-critical, green field projects.
+
+----
+
+Tags: blog,english,ben,benjamin,sandofski,swift,objective-c

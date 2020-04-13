@@ -1,0 +1,42 @@
+Title: KnitYak: Algorithmically Generated Scarves
+
+----
+
+Date: 2015-07-16
+
+----
+
+Text: 
+
+> **Fabienne Serrière (@fbz)**
+> I'm making algorithmically generated knits: no two are the same. Each ships with source code! http://kck.st/1eFXnPX 
+
+(image: dailydot_2015-jul-16.jpg)
+
+It's a little known fact, but Fabienne "fbz" Serrière is the world's foremost researcher and tinkerer regarding automated knitting machines. Yes, knitting. 
+
+She now has a [Kickstarter](https://www.kickstarter.com/projects/fbz/knityak-custom-mathematical-knit-scarves), and you should back it. 
+
+Knitting has always been a part of German and international hacker culture (Google "guerrilla knitting" if you want to know more). Knitters divide into two camps: those who knit themselves and those who make automated knitting machines do the knitting. These people are software and hardware engineers who create machines that knit any image on demand. 
+
+The hacking targets of choice have always been small, personal knitting machines, mostly from a sort of golden period in the 80s, when companies like Brother produced a decent amount of easily modifiable ones. If wikis count as books, which they have to in order for this analogy to make sense, Fabienne literally wrote the book on these machines. 
+
+[These Brother machines usually read pattern data from an attached floppy disk drive, with added input given by a keypad.](http://makezine.com/2015/07/13/hacked-machine-knits-custom-mathematical-scarves/) Emulating both, you can knit anything you want on a small scale. [Here's a YouTube video of one of the early machines in action.](https://www.youtube.com/watch?v=vKpdFIlbqSY)
+
+Fabienne's particular style of automatic knitting has almost always included some sort of cellular automata. You give the knitting machine a simple set of rules and watch as a complex pattern emerges. 
+
+Her newest project is going beyond the personal machines. Using Kickstarter, she wants to raise enough money to buy a large industrial knitting machine, set it up and produce algorithmically generated knitted scarves at scale. I think this is damn interesting, nerdy, and straight-up cool!
+
+(image: 15d23b39a5ec284cbda8c765145baf9e_original.gif)
+
+The scarves, made from fine merino wool, have patterns based on a simple algorithm (think Conway's game of life) and a seed. Every Kickstarter backer gets to pick a different seed, making their generated scarf truly unique.
+
+Complete scarves are pricey with $150 a piece, but [you should have a look anyway](https://www.kickstarter.com/projects/fbz/knityak-custom-mathematical-knit-scarves). You can get smaller pieces of fabric with your personal pattern for way cheaper, or you can just support fbz's awesome endeavour. The project has just passed the halfway point with over a week left until the end of the funding period.
+
+#### Update, July 22
+
+The project has been successfully funded, yay.
+
+----
+
+Tags: blog,english,fabienne,serriere,fbz,kickstarter

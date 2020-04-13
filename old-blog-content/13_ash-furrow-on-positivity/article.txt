@@ -1,0 +1,32 @@
+Title: Ash Furrow on Positivity
+
+----
+
+Date: 2015-07-22
+
+----
+
+Text: 
+
+[I wholeheartedly agree with Ash](http://ashfurrow.com/blog/gratuitous-positivity/):
+
+> The problem of text-based communication is that there is no tone: beginners often interpret the tone of messages from existing contributors to be negative. Well-intentioned library maintainers can inadvertently hurt a beginner’s feelings.
+
+> The beginner feels hurt and ashamed. Open source looked fun but it wasn’t.
+
+Ash has some really good examples on how to improve communication for Open Source projects so that beginners won't be turned off because of maintainers' rough tone. In fact, I would go as far as arguing that these tips are applicable to more than just open source projects:
+
+* If you want to attract new players for your game go easy on them at first
+* If you want your company to be more diverse, have good, respectful and friendly communication to the outside world
+* If you want your movement to be more inclusive and gain followers, onboard them gently
+* If your social network consists only of one demographic, check if your tone discourages others
+
+Ash's tips also resonate with something I've been saying: You *need* to show people strong indications that they are welcome in your thing if you want them to approach you. We white dudes usually feel pretty welcome in the tech sphere, but others have been burned too often, or heard stories about others being burned, so you need to make sure to show people: "This is a friendly place. We will welcome and respect you."
+
+This is also the reason organizations like AppCamp4Girls or [DjangoGirls](http://breakthesystem.org/yay-python) are so important. Young girls are told they don't belong in tech all the time, directly or indirectly. We need to show them that the *do* in fact belong here. That there is space for them here.
+
+And after all: Wouldn't it be cool if the Open Source and tech world became more friendly? 😋
+
+----
+
+Tags: blog,english,ash,furrow,open source

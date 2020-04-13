@@ -1,0 +1,37 @@
+Title: Housekeeping
+
+----
+
+Date: 2015-07-15
+
+----
+
+Text: 
+
+Welcome. Please imagine an "under construction" sign, animating happily, right below this sentence. 
+
+It's customary to give some kind of mission statement at the beginning of these things. Mine is rather broad: I want to share and comment  on interesting developments in the extended tech scene. Sometimes these are programming related, sometimes there are more squishy social issues to be discussed. You'll probably read more about Apple than Microsoft or Google, because  Apple are more interesting to me right now. 
+
+This will not be a news site. I will be opinionated. 
+
+Almost all of the content will be in English, but I reserve the right to occasionally post a German article if I feel like it. You'll just have to *umgehen* with it. *\*dons sunglasses\**
+
+## My Employer
+
+It's no secret that I work for Elgato. They know about this blog and are fine with it. Any opinions I post are my own. Don't expect articles to just talk about my experiences at Elgato. I've been a freelancer, a junior programmer, an entrepreneur, a senior programmer, a gas station clerk, an online-retail-parcel-packer, and a CTO. All of these experiences can and will resonate in my articles. 
+
+## Feed
+
+There is now a feed. You can subscribe at [/feed](http://breakthesystem.org/feed/). I also post all articles to my Twitter account, [@breakthesystem](https://twitter.com/breakthesystem/).
+
+## Comments
+
+There will be no comments section. I'd love to hear from you via Twitter or email. 
+
+## Thank You
+
+Thank you for reading. Let's go on this journey together.
+
+----
+
+Tags: english,housekeeping,welcome,blog

@@ -1,0 +1,37 @@
+Title: Excerpt from a Tech Presentation Somewhere in my Head Where the Microphone Only Picked Up the Speaker But Not the Audience
+
+----
+
+Date: 2015-12-05
+
+----
+
+Text: 
+
+…alright so that shows you all the different ways a `Warbulator` can use the `endipidate` method. Now let’s move on to another concept regarding how to manage all that complexity.
+
+As you see on this slide, we usually have exactly one `Hitler` instance. This instance has access to a number of je— … yes, is there a question?
+
+…
+
+No no, it *has* to be named `Hitler`.
+
+…
+
+Why? Well, *obviously* because that nomenclature exactly describes the concept of one class managing multiple other classes. There’s just no other way to easily— yes, you in the back?
+
+… 
+
+*Of course* I could *NOT* just call it a `Manager`. The class name `Hitler` has a long history in our project and to change it now just because a few sissies are *whining* is *completely* out of the que— do you have a comment, person in row 3?
+
+…
+
+Oh that’s just *GREAT*! Just because apparently there was *some guy* or *some thing* in history that I didn’t even *THINK* about when creating the project, now *I* should change my project? Do you even know how much work that would be? The finds? The replaces? The commits? And anyway, history is in the past, and we’re not affected by it, because we’re *modern* and *ANYWAY THIS DISCUSSION IS JUST COMPLETE HIPPIE BULLSHIT!*
+
+You know what?! If you don’t like the `Hitler` class, you can just— oh, you forked it? Don’t tell me you also changed the— what? You’re just using *another* library? 
+
+You know what? Fuck you! People like you with your *niceness* and your *respect for other people* are what’s destroying open source anyway. And I’m changing my license that only I can change the project’s source code anyway! Fucking Hippies!
+
+----
+
+Tags: english,blog,humour,open source
