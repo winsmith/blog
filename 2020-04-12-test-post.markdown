@@ -129,6 +129,8 @@ $ xcparse screenshots /tmp/LibiDerivedData/Logs/Test/Run-Libi-2020.04.13_13-06-0
 simulators=( "iPhone 8" "iPhone 11 Pro" "iPhone 11 Pro Max" "iPad Pro (12.9-inch) (3rd generation)", "iPad Pro (9.7-inch)" )
 languages=( "en" "de" "fr" )
 targetFolder="/Users/breakthesystem/Desktop/LibiScreenshots"
+schemeName="Libi"
+projectName="./Libi.xcodeproj"
 
 
 
@@ -138,7 +140,7 @@ do
     do
         rm -rf /tmp/LibiDerivedData/Logs/Test
         echo "📲  Building and Running for $simulator in $language"
-        xcodebuild -testLanguage $language -scheme Libi -project ./Libi.xcodeproj -derivedDataPath '/tmp/LibiDerivedData/' -destination "platform=iOS Simulator,name=$simulator" build test
+        xcodebuild -testLanguage $language -scheme $schemeName -project $projectName -derivedDataPath '/tmp/LibiDerivedData/' -destination "platform=iOS Simulator,name=$simulator" build test
         echo "🖼  Collecting Results..."
         mkdir -p "$targetFolder/$simulator/$language"
         find /tmp/LibiDerivedData/Logs/Test -maxdepth 1 -type d -exec xcparse screenshots {} "$targetFolder/$simulator/$language" \;
