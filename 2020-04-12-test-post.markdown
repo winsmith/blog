@@ -12,6 +12,8 @@ Lots of people are using [fastlane](https://fastlane.tools) to create their scre
 
 Fastlane uses XCUITest to take screenshots anyway, so I decided to try out if I could **recreate the functionality of `fastlane snapshot`** without using Ruby, without installing any gems, and without having to buy into the fastlane ecosystem.
 
+My goal: Write an Xcode UI Test that takes screenshots, then extract and collect those screenshots for all languages and devices into a folder on my Desktop.
+
 After some fiddling, here are my results.
 
 ## Overview over the Process
