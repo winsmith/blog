@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Test Post"
-subtitle: "Please Don't Ignore"
+title:  "Create automated Screenshots using XCUITest"
+subtitle: "Look ma, no fastlane!"
 date:   2020-04-14 00:00:00 +0000
 categories: english ios
 ---
@@ -75,6 +75,13 @@ func testMakeScreenshots() {
 
 This test uses a function called `takeScreenshot(named:)`, which extracts the correct way of taking screenshots in our situation. 
 
+<div class="alert alert-info" role="alert">
+  <strong>Note:</strong> If you don't want to write your UI test yourself, or you want an easy starting point, you can try <strong>recording</strong> your steps instead. To do that, place the cursor inside your `testMakeScreenshot` function and click the little 🔴 record button in the bottom toolbar. This will launch your app in the simulator and then record your taps there as code inside the test function. Click the record button again to stop.
+</div>
+
+<div class="alert alert-info" role="alert">
+  <strong>Another Note:</strong> The Xcode UI testing framework is pretty dependent on <strong><a href="https://developer.apple.com/documentation/uikit/uiaccessibilityidentification/1623132-accessibilityidentifier">accessibility identifiers</a></strong>. If you don't have explicitly set those, UIKit will use the text values of things like buttons or labels as accessibility identifiers, but since these are localized, your tests might not work after switching the scheme language. My recommendation is to set the `accessibilityIdentifier` property of things you need to access in your tests real quick.
+</div>
 
 ### Take Screenshots
 
