@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Review: Paper Books"
+subtitle: ""
 date:   2015-10-26 19:14:48 +0200
 categories: english books review
 ---

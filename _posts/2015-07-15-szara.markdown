@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Szara"
+subtitle: ""
 date:   2015-07-15 19:14:48 +0200
 categories: english szara
 ---
