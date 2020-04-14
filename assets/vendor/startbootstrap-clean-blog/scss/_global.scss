@@ -6,7 +6,7 @@ body {
 }
 
 p {
-  line-height: 1.5;
+  line-height: 1.8;
   margin: 30px 0;
   a {
     text-decoration: underline;
@@ -19,7 +19,9 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 800;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+  margin-top: 3em;
   @include sans-serif-font;
 }
 
@@ -30,6 +32,15 @@ a {
   &:hover {
     color: $primary;
   }
+}
+
+p.lead {
+  @include sans-serif-font;
+  font-size: 1.4em;
+}
+
+li {
+  margin: 1em 0;  
 }
 
 blockquote {

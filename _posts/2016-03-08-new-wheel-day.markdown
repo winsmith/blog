@@ -6,7 +6,7 @@ date:   2016-03-08 19:14:48 +0200
 categories: english review gaming
 ---
 
-![My cat mimi admirin the racing wheel](/assets/mimiwheel.jpg)
+<img class="img-fluid" src="/assets/mimiwheel.jpg" alt="My cat mimi admiring the racing wheel">
 
 So I bought a new peripheral, a Thrustmaster T300RS racing wheel for my PS4. It is very nice.
 

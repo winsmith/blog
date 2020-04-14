@@ -1,7 +1,7 @@
 title: breakthesystem
 email: daniel@breakthesystem.org
 description: >- # this means to ignore newlines until "baseurl:"
-  My personal web site on the international web
+  My personal web site on geocities
 author: Daniel Jilg
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
