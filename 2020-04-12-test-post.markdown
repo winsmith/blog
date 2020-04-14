@@ -129,7 +129,7 @@ However, the data is not usable right now. There are no PNG files here, which is
 
 ## Third Step: Extract Screenshots from the Test Logs
 
-The `.xcresult` is pretty complicated and I didn't really want to parse it myself; luckily I didn't have to. There's a tool called [`xcparse`](https://github.com/ChargePoint/xcparse) which does exactly that. Install it via homebrew:
+The `.xcresult` package format is pretty complicated and I didn't really want to parse it myself; luckily I didn't have to. There's a tool called [`xcparse`](https://github.com/ChargePoint/xcparse) which does exactly that. Install it via homebrew:
 
 ```bash
 $ brew install chargepoint/xcparse/xcparse
