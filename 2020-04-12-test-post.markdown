@@ -3,7 +3,7 @@ layout: post
 title:  "Test Post"
 subtitle: "Please Don't Ignore"
 date:   2020-04-14 00:00:00 +0000
-categories: test
+categories: english ios
 ---
 
 <p class="lead">If you develop an iOS app, you know this: <strong>Creating screenshots is a lot of work.</strong> You need updated screenshots for all your device types in all your languages, and manually creating all those takes a long time. </p>
@@ -109,19 +109,39 @@ After this step, you can already see the screen shots in the test logs. Make sur
 
 ## Second Step: Run Tests from the Command Line
 
+If we want to automate things, it's a good idea to run them from the command line. Go to your terminal, navigate to the directory that contains your `.xcodeproj` file and run the following command (replace scheme name and project file name)
+
 ```bash
 $ xcodebuild -testLanguage de -scheme Libi -project ./Libi.xcodeproj -derivedDataPath '/tmp/LibiDerivedData/' -destination "platform=iOS Simulator,name=iPhone 11 Pro Max" build test
 ```
 
+If the Simulator app is currently running on your system, you'll be able to watch live as the test taps through your app. Otherwise the tests will run in headless mode.
+
+After the tests are done, you'll find a test result `xcresult` file in the derived data Path, `/tmp/LibiDerivedData/Logs/Test/`. It is a package, and it contains all the data we already saw in Xcode.
+
+However, the data is not usable right now. There are no PNG files here, which is disappointing. 
+
+<div class="alert alert-info" role="alert">
+  <strong>Note:</strong> In fact, if you watch the .xcresult package contents while the test is actually running, you can even see your screenshots being saved in there as PNGs. However, they then get packaged into the .xcresult format, which is a bit annoying. I wish we could just tell Xcode to leave them out in the open.
+</div>
+
 ## Third Step: Extract Screenshots from the Test Logs
 
-Get xcparse: https://github.com/ChargePoint/xcparse
+The `.xcresult` is pretty complicated and I didn't really want to parse it myself; luckily I didn't have to. There's a tool called [`xcparse`](https://github.com/ChargePoint/xcparse) which does exactly that. Install it via homebrew:
+
+```bash
+$ brew install chargepoint/xcparse/xcparse
+```
+
+After installing `xcparse`, you can use its `screenshots` command to extract all screenshots from a given `xcresult` into a folder like so (replace folder names as necessary)
 
 ```bash
 $ xcparse screenshots /tmp/LibiDerivedData/Logs/Test/Run-Libi-2020.04.13_13-06-03-+0200.xcresult "~/Desktop/LibiScreenshots/"
 ```
 
 ## Fourth Step: Run for each Combination of Device and Language.
+
+Let's dust off these bash scripting skills:
 
 ```bash
 #!/bin/bash
@@ -156,6 +176,8 @@ done
 
 ## Addendum Two: Accessibility Identifiers
 
+## Addendum: Disabling Animations
+
 ## Addendum Three: Sleeping, Swiping, and More
 ```swift
 sleep(2)
@@ -163,6 +185,8 @@ takeScreenshot(named: "Insights_1")
 app.collectionViews["DeppInsightsViewController"].swipeUp()
 takeScreenshot(named: "Insights_2")
 ```
+
+## Addendum Four: Creating Initial Data
 
 ----
 
