@@ -146,7 +146,7 @@ func application(_ application: UIApplication,
 
 After this step, you can already see the screen shots in the test logs. Make sure that is the case.
 
-1. In Xcode, run your new test (e.g. by pressing <kbd><kbd>command</kbd> + <kbd>U</kbd></kbd>)
+1. In Xcode, run your new test (e.g. by pressing <kbd>⌘</kbd><kbd>U</kbd>)
 1. Open the Report Navigator and wait for your test for finish
 1. Click the topmost test, which is the one you just started
 1. Click the Quicklook icon next to one of the test's attachment to see one of your screenshots
@@ -313,3 +313,5 @@ These are things I intend to write about in one or more follow up articles if pe
 - [Derik Ramirez: Understanding XCUITest screenshots and how to access them](https://rderik.com/blog/understanding-xcuitest-screenshots-and-how-to-access-them/)
 - [Swift by Sundell: Getting started with Xcode UI testing in Swift](https://www.swiftbysundell.com/articles/getting-started-with-xcode-ui-testing-in-swift/)
 - [ChargePoint: xcparse](https://github.com/ChargePoint/xcparse)
+- [NSHipster: simctl](https://nshipster.com/simctl/)
+- [Jeff Kelley: Fixing Simulator Status Bars for App Store Screenshots With Xcode 11 and iOS 13](https://www.detroitlabs.com/blog/2019/09/19/fixing-simulator-status-bars-for-app-store-screenshots-with-xcode-11-and-ios-13/)
