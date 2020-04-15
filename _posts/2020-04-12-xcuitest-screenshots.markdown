@@ -37,7 +37,7 @@ Just a quick sneak preview, here is how things should look like at the end:
 
 ### Setting Things up
 
-Even if you already have an UI Testing Target, you should probably create a new one for your screenshots. If you to not have an UI Testing Target, welcome to the world of UI testing! 
+Even if you already have an UI Testing Target, you should probably create a new one for your screenshots. If you do not have an UI Testing Target, welcome to the world of UI testing! 
 
 1. In Xcode, go to `File > New > Target...` and select “UI testing bundle”.
 1. Call the Bundle something like "YourAppScreenshots" and click "Finish".
