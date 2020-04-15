@@ -221,23 +221,25 @@ schemeName="Libi"
 
 # All the simulators we want to screenshot
 # Copy/Paste new names from Xcode's
-# "Devices and Simulators" window.
+# "Devices and Simulators" window
+# or from `xcrun simctl list`.
 simulators=(
-    #"iPhone 8"
+    "iPhone 8"
     #"iPhone 11 Pro"
     "iPhone 11 Pro Max"
     "iPad Pro (12.9-inch) (3rd generation)"
-    #"iPad Pro (9.7-inch)"
+    "iPad Pro (9.7-inch)"
 )
 
 # All the languages we want to screenshot (ISO 3166-1 codes)
 languages=(
     "en"
     "de"
-    #"fr"
+    "fr"
 )
 
 # All the appearances we want to screenshot
+# (options are "light" and "dark")
 appearances=(
     "light"
     "dark"
