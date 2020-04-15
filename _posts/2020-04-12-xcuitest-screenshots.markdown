@@ -83,7 +83,7 @@ func testMakeScreenshots() {
 }
 ```
 
-This test uses a function called `takeScreenshot(named:)`, which extracts the correct way of taking screenshots in our situation. 
+This test uses a function I wrote, `takeScreenshot(named:)`, which extracts the correct way of taking screenshots in our situation. See below for the function code.
 
 <div class="alert alert-info" role="alert">
   <strong>Note:</strong> If you don't want to write your UI test yourself, or you want an easy starting point, you can try <strong>recording</strong> your steps instead. To do that, place the cursor inside your <code>testMakeScreenshot</code> function and click the little 🔴&nbsp;record button in the bottom toolbar. This will launch your app in the simulator and then record your taps there as code inside the test function. Click the record button again to stop.
@@ -122,6 +122,26 @@ func takeScreenshot(named name: String) {
 }
 ```
 
+### Aside: Command Line Arguments
+
+Earlier, we set a command line argument. Here's a quick example code on how to retrieve that in your `AppDelegate.swift`:
+
+```swift
+// AppDelegate.swift
+
+func application(_ application: UIApplication,
+    didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
+    ) -> Bool {
+
+    if CommandLine.arguments.contains("--libiScreenshots") {
+      // We are in testing mode, make arrangements
+      configStore = ScreenshotsConfigStore()
+      configStore.dataPointsManager.makeExampleData()
+    }
+    
+    // ...
+```
+
 ### Check if the Screenshots are There
 
 After this step, you can already see the screen shots in the test logs. Make sure that is the case.
@@ -133,7 +153,25 @@ After this step, you can already see the screen shots in the test logs. Make sur
 
 <img class="img-fluid" src="/assets/test_report.png" alt="A finished test report in Xcode">
 
-Yay, we have screenshots. That's the hardest part done. But we're not there yet. We need extration, and automation.
+Yay, we have screenshots. That's the hardest part done. But we're not there yet. We need extraction, and automation.
+
+<div class="alert alert-info" role="alert">
+  <strong>A Note on Idling:</strong> If you have a lot of <code>Waiting for application xyz to idle</code> messages in your logs, or your test workflows are generally flaky, this might be because of animations that are running. If you set up a command line flag earlier, you can use this to tell your view controllers to disable animations by calling <code>UIView.setAnimationsEnabled(bool)</code>. Here's an example where I use my implementation of a Config Store: 
+
+<p>
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">override</span> <span class="kd">func</span> <span class="nf">viewDidLoad</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">super</span><span class="o">.</span><span class="nf">viewDidLoad</span><span class="p">()</span>
+    
+    <span class="c1">// configStore.shouldAnimateUI is true</span>
+    <span class="c1">// except when we are running UI Tests</span>
+    <span class="kt">UIView</span><span class="o">.</span><span class="nf">setAnimationsEnabled</span><span class="p">(</span><span class="n">configStore</span><span class="o">.</span><span class="n">shouldAnimateUI</span><span class="p">)</span>
+    
+    <span class="c1">// ...</span>
+<span class="p">}</span>
+</code></pre></div></div>
+</p>
+
+</div>
 
 ## Second Step: Run Tests from the Command Line
 
