@@ -225,7 +225,7 @@ schemeName="Libi"
 # or from `xcrun simctl list`.
 simulators=(
     "iPhone 8"
-    #"iPhone 11 Pro"
+    "iPhone 11 Pro"
     "iPhone 11 Pro Max"
     "iPad Pro (12.9-inch) (3rd generation)"
     "iPad Pro (9.7-inch)"
