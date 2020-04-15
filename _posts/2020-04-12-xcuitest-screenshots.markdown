@@ -261,7 +261,8 @@ do
             rm -rf /tmp/LibiDerivedData/Logs/Test
             echo "📲  Building and Running for $simulator in $language"
 
-            # Boot up the new simulator and set it to the correct appearance
+            # Boot up the new simulator and set it to 
+            # the correct appearance
             xcrun simctl boot "$simulator"
             xcrun simctl ui "$simulator" appearance $appearance
 
