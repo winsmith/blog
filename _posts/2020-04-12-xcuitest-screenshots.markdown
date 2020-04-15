@@ -212,31 +212,35 @@ And we are basically done. All we have to do now is run the `xcodebuild` and `xc
 ```bash
 #!/bin/bash
 
-## Configuration
-
-# The Xcode project to create screenshots of
+# The Xcode project to create screenshots for
 projectName="./Libi.xcodeproj"
 
-# The scheme to run tests against
-# (your main scheme if you've followed this article)
+# The scheme to run tests for
 schemeName="Libi"
 
-# All the simulators we want to screenshot.
+
+# All the simulators we want to screenshot
 # Copy/Paste new names from Xcode's
 # "Devices and Simulators" window.
 simulators=(
-    "iPhone 8"
-    "iPhone 11 Pro"
+    #"iPhone 8"
+    #"iPhone 11 Pro"
     "iPhone 11 Pro Max"
     "iPad Pro (12.9-inch) (3rd generation)"
-    "iPad Pro (9.7-inch)"
+    #"iPad Pro (9.7-inch)"
 )
 
 # All the languages we want to screenshot (ISO 3166-1 codes)
 languages=(
     "en"
     "de"
-    "fr"
+    #"fr"
+)
+
+# All the appearances we want to screenshot
+appearances=(
+    "light"
+    "dark"
 )
 
 # Save final screenshots into this folder (it will be created)
@@ -250,16 +254,26 @@ for simulator in "${simulators[@]}"
 do
     for language in "${languages[@]}"
     do
-        rm -rf /tmp/LibiDerivedData/Logs/Test
-        echo "📲  Building and Running for $simulator in $language"
-        xcodebuild -testLanguage $language -scheme $schemeName -project $projectName -derivedDataPath '/tmp/LibiDerivedData/' -destination "platform=iOS Simulator,name=$simulator" build test
-        echo "🖼  Collecting Results..."
-        mkdir -p "$targetFolder/$simulator/$language"
-        find /tmp/LibiDerivedData/Logs/Test -maxdepth 1 -type d -exec xcparse screenshots {} "$targetFolder/$simulator/$language" \;
+        for appearance in "${appearances[@]}"
+        do
+            rm -rf /tmp/LibiDerivedData/Logs/Test
+            echo "📲  Building and Running for $simulator in $language"
+
+            # Boot up the new simulator and set it to the correct appearance
+            xcrun simctl boot "$simulator"
+            xcrun simctl ui "$simulator" appearance $appearance
+
+            # Build and Test
+            xcodebuild -testLanguage $language -scheme $schemeName -project $projectName -derivedDataPath '/tmp/LibiDerivedData/' -destination "platform=iOS Simulator,name=$simulator" build test
+            echo "🖼  Collecting Results..."
+            mkdir -p "$targetFolder/$simulator/$language/$appearance"
+            find /tmp/LibiDerivedData/Logs/Test -maxdepth 1 -type d -exec xcparse screenshots {} "$targetFolder/$simulator/$language/$appearance" \;
+        done
     done
 
     echo "✅  Done"
 done
+
 ```
 
 I called this file `takeScreenshots.sh` and added it to the Xcode project for easier editing, inside the `LibiScreenshots` folder. In the repository root folder I can call it like so:
