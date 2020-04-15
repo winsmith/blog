@@ -43,6 +43,10 @@ Even if you already have an UI Testing Target, you should probably create a new 
 1. Call the Bundle something like "YourAppScreenshots" and click "Finish".
 1. Edit your app’s scheme to run your UI tests when testing: Go to `Product > Scheme > Edit Scheme...` click on “Test” in the sidebar, and enable your new bundle. (Newer Xcode versions might already have it enabled, so no need to do anything in this case)
 
+<div class="alert alert-info" role="alert">
+  <strong>Note:</strong> I wrote this article against Xcode 11.4 and Swift 5. If you use different versions, your experience may differ. 
+</div>
+
 ### Create a Test
 
 Add a new property to your test class to keep track of the `XCUIApplication`:
