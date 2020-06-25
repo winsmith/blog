@@ -64,11 +64,7 @@ class JWTAuthenticationMiddleware(AuthenticationMiddleware):
 
         # Create a new user. There's no need to set a 
         # password because it is not used to log in directly
-        try:
-            user = User.objects.get(username=user_uuid)
-        except User.DoesNotExist:
-            user = User(username=user_uuid)
-            user.save()
+        user, created = User.objects.get_or_create(username=user_uuid)
 
         # Update the user's meta information, the access 
         # token payload is the canonical source of truth
