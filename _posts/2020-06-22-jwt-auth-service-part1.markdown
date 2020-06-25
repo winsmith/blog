@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Authenticate Django Services with JWT"
+title:  "Authenticate Django Services with JWT — Part 1"
 subtitle: "Distribute authentication tokens through your Django microservices or services"
-date:   2020-06-23 17:00:00 +0100
+date:   2020-06-23 15:00:00 +0100
 categories: python django development services
 ---
 
@@ -12,11 +12,23 @@ categories: python django development services
 
 <p class="lead">In this blog post, I will go into how we added JWT based shared authentication. In the follow up, I will show how to create a Django Authentication Middleware to consume the JWT tokens to authenticate users.</p>
 
+<p>
+<div class="alert alert-info" role="alert">
+This article was developed and tested using Python 3.7 and Django 3.0.3. The target audience is advanced Django programmers.
+</div>
+</p>
+
 ----
+
+## Thoughts on Usernames vs Email Addresses
 
 Since we were revamping the auth system anyway, we also decided to remove the need for user names, which Django Users have by default. Instead, we decided users should identify themselves using their email address. We save a randomly generated UUID4 into the users username field. 
 
-<p class="small">If you want to keep using usernames, you can ignore all `Form` subclasses in this article, because those overwrite and implement that behaviour. The rest should work the same.</p>
+The solution as shown here exhibits a small information leak, since an attacker can use the registration form to check if an email already exists in the database. In a production environment, you should take steps to mitigate that, such as not giving an error message if an email is already registered and instead sending a "reset" your password email.
+
+If you want to keep using usernames, you can ignore all `Form` subclasses in this article, because those overwrite and implement that behaviour. The rest should work the same.
+
+## Overview
 
 This is the road we are going to take: 
 
@@ -25,8 +37,6 @@ This is the road we are going to take:
 - **read them in Django's user middleware** in the services. 
 
 See below for an explanation of each of these parts.
-
-This article was developed and tested using Python 3.7 and Django 3.0.3. The target audience is advanced Django programmers.
 
 ## Cookies
 
@@ -433,6 +443,23 @@ class LogoutView(RedirectView):
         return response
 ```
 
+## URLs
+
+It goes without saying that you should hook up your new views in `urls.py`:
+
+```python
+from django.urls import path
+from django.contrib.auth import views as auth_views
+
+from . import views
+
+urlpatterns = [
+    path("login/", views.LoginView.as_view(), name="login"),
+    path("logout/", views.LogoutView.as_view(), name="logout"),
+    path("register/", views.RegistrationView.as_view(), name="register"),
+  ...
+]
+```
 
 ## Reading Cookies in Services
 See the next article on how to retrieve and login users with the JWT cookies set.
