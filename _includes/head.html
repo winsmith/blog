@@ -21,4 +21,29 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
 
+  <script>
+    let sendTelemetry = function (signalType) {
+      fetch('https://apptelemetry.io/api/v1/apps/4FBDB7B3-E1AB-42A9-91AB-E6AA3629B9EF/signals/', {
+        method: 'POST',
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          "clientUser": navigator.userAgent,
+          "type": signalType,
+          "payload": {
+            "url": window.location.href,
+            "useragent": navigator.userAgent,
+            "language": navigator.language,
+            "platform": navigator.platform,
+            "vendor": navigator.vendor,
+          }
+        })
+      });
+    }
+
+    sendTelemetry("pageLoad")
+  </script>
+
 </head>
